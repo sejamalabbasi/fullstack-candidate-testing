@@ -36,12 +36,6 @@ const JobList = ({ jobs, setSearchData, originalData }) => {
                 job postings
               </span>
             </div>
-            {/* <div className='text-sm'>
-              <span className='text-gray-400'>Sort by</span>
-              <span className='pl-2 cursor-pointer' onClick={() => sortData("work_schedule")}>Work Schedule</span>
-              <span className='pl-2 cursor-pointer' onClick={() => sortData("job_title")}>Job Title</span>
-              <span className='pl-2 cursor-pointer' onClick={() => sortData("experience")}>Experience</span>
-            </div> */}
             <Sorter
               jobs={jobs}
               setSearchData={setSearchData}
@@ -50,7 +44,7 @@ const JobList = ({ jobs, setSearchData, originalData }) => {
           </div>
           {jobs.map((job, id) => (
             <div className="ml-2 relative" key={id}>
-              <div className="h-10 w-10 rounded-lg bg-gray-500 inline-block cursor-pointer mb-2">
+              <div className="h-10 w-10 rounded-lg bg-blue-500 inline-block cursor-pointer mb-2">
                 <p
                   className="text-white font-semibold text-2xl mt-0.5 text-center"
                   onClick={() => showHideJobs("job-" + id)}

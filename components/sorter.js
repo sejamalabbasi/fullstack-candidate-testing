@@ -98,8 +98,8 @@ const SortMenu = ({ jobs, setSearchData, originalData }) => {
   };
 
   return (
-    <ul className="flex">
-      <li className="sortJobsTitle">Sort by: </li>
+    <ul className="flex flex-wrap">
+      <li>Sort by: </li>
       <li className="ml-2 flex" onClick={() => sortBy("Location")}>
         {locationState !== "0" ? (
           locationState == "1" ? (

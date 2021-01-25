@@ -40,7 +40,6 @@ const Index = () => {
   if (!data) return <div>Loading...</div>;
 
   const setData = (data) => {
-    console.log({ data });
     setSearchData(data);
   };
 

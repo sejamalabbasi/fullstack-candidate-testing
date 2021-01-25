@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "jest",
+    "test:ci": "jest --ci"
   },
   "dependencies": {
     "autoprefixer": "^10.2.3",
@@ -18,5 +20,14 @@
     "react-icons": "^4.1.0",
     "swr": "^0.4.0",
     "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.1.0",
+    "@testing-library/react": "^9.4.0",
+    "babel-jest": "^25.1.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^25.1.0",
+    "react-test-renderer": "^16.12.0",
+    "node-mocks-http": "^1.10.1"
   }
 }
